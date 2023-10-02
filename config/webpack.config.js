@@ -523,6 +523,7 @@ module.exports = function (webpackEnv) {
                 options: {
                   resources:[
                     path.join(__dirname,"../src/variable.scss"),
+                    path.join(__dirname,"../src/colors.scss"),
                   ]
                 }
               }]),
@@ -552,7 +553,8 @@ module.exports = function (webpackEnv) {
                 loader: 'sass-resources-loader',
                 options: {
                   resources: [
-                    path.join(__dirname, "../src/variable.scss")
+                    path.join(__dirname, "../src/variable.scss"),
+                    path.join(__dirname,"../src/colors.scss"),
                   ]
                 },
               }]),

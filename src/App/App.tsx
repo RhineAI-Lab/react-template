@@ -1,14 +1,17 @@
 import React from 'react'
 import Style from './App.module.scss'
+import M3Style from './theme/Material3Theme.module.scss'
 import {Route, Routes} from "react-router-dom";
 import Home from "./Home/Home";
 
 function App() {
   return (
     <div className={Style.App}>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-      </Routes>
+      <div className={M3Style.MaterialYou + ' ' + M3Style.Green}>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+        </Routes>
+      </div>
     </div>
   )
 }

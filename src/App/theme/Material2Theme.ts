@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-export const theme = createTheme({
+export const material2Theme = createTheme({
   status: {
     danger: '#e53e3e',
   },

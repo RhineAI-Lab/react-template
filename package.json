@@ -26,7 +26,7 @@
     "@babel/core": "^7.22.20",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@material/web": "^1.0.0-pre.17",
+    "@material/web": "^1.0.0",
     "@mui/material": "^5.14.10",
     "@mui/styled-engine-sc": "^5.14.10",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
