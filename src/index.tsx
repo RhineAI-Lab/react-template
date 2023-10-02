@@ -9,7 +9,8 @@ import {material2Theme} from "./App/theme/material2-theme";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
-);
+)
+
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={material2Theme}>
@@ -18,6 +19,6 @@ root.render(
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
-);
+)
 
 reportWebVitals();
