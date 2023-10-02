@@ -8,6 +8,7 @@ function Home() {
     <div className={Style.Home}>
       <div className={Style.holder}>
         <md-outlined-button>Back</md-outlined-button>
+        <span className={Style.space}/>
         <md-filled-button>Next</md-filled-button>
       </div>
     </div>

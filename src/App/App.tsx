@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './App.module.scss'
-import M3Style from './theme/Material3Theme.module.scss'
+import M3Style from './theme/material3-theme.module.scss'
 import {Route, Routes} from "react-router-dom";
 import Home from "./Home/Home";
 
