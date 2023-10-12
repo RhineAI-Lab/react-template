@@ -43,17 +43,36 @@ module.exports = override(
     test: /\.scss$/,
     use: [
       'style-loader',
-      'css-loader',
-      'sass-loader',
+      {
+        loader: 'css-loader',
+        options: {
+          modules: {
+            localIdentName: "[name]_[local]_[hash:base64:8]",
+          },
+        }
+      },
+      {
+        loader: 'sass-loader',
+        options: {
+        }
+      },
       {
         loader: 'sass-resources-loader',
         options: {
-          resources: [
-            './src/assets/scss/variable.scss',
-            './src/assets/scss/colors.scss',
-          ]
+          resources: ['./src/assets/scss/variable.scss']
         }
       }
     ]
+  }),
+  // scss全局变量
+  adjustStyleLoaders(rule => {
+    if (rule.test.toString().includes('scss')) {
+      rule.use.push({
+        loader: require.resolve('sass-resources-loader'),
+        options: {
+          resources: ['./src/assets/scss/variable.scss']
+        }
+      })
+    }
   })
 )
