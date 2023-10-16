@@ -1,7 +1,8 @@
 const {
   override,
   addWebpackAlias,
-  addWebpackModuleRule
+  addWebpackModuleRule,
+  adjustStyleLoaders,
 } = require('customize-cra')
 const path = require('path')
 const paths = require("./paths")
